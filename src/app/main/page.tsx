@@ -1,10 +1,11 @@
 import Link from 'next/link'
 
-export default function Main() {
+export default async function Main() {
   return (
     <div>
-      <h1>Main</h1>
-      <Link href="/">Home</Link>
+      <h1>Main Page</h1>
+      {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
+      <Link href="/dashboard">Dashboard</Link>
     </div>
   )
 }

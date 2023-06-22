@@ -4,7 +4,7 @@ export default function Dashboard() {
   return (
     <div>
       <h1>Dashboard</h1>
-      <Link href="/main">Home</Link>
+      <Link href="/main"> Go to Profile</Link>
     </div>
   )
 }
