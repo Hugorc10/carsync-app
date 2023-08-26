@@ -1,18 +1,11 @@
+import { Logo } from '@/components'
 import Link from 'next/link'
+import { redirect } from 'next/navigation'
 
-export default async function Home() {
-  const response = await fetch('https://api.github.com/users/diego3g')
-  const data = await response.json()
+export default async function Main() {
+  redirect('/auth/signin')
 
-  console.log(data)
-
-  return (
-    <div>
-      <h1>Home</h1>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
-      <Link href="/dashboard">Dashboard</Link>
-    </div>
-  )
+  return <></>
 }
 
 // Server-side first
