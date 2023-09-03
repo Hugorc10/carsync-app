@@ -4,9 +4,10 @@ const Logo = () => {
   return (
     <Image
       src="/images/logo.png"
-      width={700}
-      height={700}
+      width={500}
+      height={500}
       alt="Logo da empresa"
+      className="h-auto hover:drop-shadow"
     />
   )
 }
