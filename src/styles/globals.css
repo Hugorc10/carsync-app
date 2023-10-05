@@ -22,14 +22,14 @@
   position: fixed;
   display: flex;
   justify-content: center;
-  pointer-events: none;
+  margin-left: 0;
+  /* pointer-events: none; */
 }
 
 .main:before {
   background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
   position: absolute;
-  content: "";
-  z-index: 2;
+  /* z-index: 2; */
   width: 100%;
   height: 100%;
   /* top: 0; */
@@ -81,11 +81,15 @@
 /* Tailwind Styles */
 
 .app {
-  @apply relative z-10 flex flex-col max-w-7xl mx-auto;
+  @apply relative z-10 flex flex-col mx-auto;
 }
 
 .custom-btn {
-  @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none cursor-pointer;
+  @apply font-bold py-4 px-6 rounded;
+}
+
+.btn-blue {
+  @apply bg-blue-500 text-white hover:bg-blue-700;
 }
 
 .hero__title {

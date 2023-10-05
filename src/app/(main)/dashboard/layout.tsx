@@ -8,7 +8,7 @@ export default function DashboardLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="flex flex-col justify-between">
+    <div className="flex flex-col">
       {/* <body> */}
       <Navbar />
       <SideBar />

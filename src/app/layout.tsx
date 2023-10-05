@@ -20,6 +20,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <div className="gradient" />
         </div>
         <main className="app">{children}</main>
+
         {/* <Footer /> */}
       </body>
     </html>
