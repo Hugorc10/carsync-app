@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 function Group({ groupNumber }: { groupNumber: number }) {
   return (
-    <div className="flex flex-col items-center border rounded-lg p-5">
+    <div className="flex flex-col items-center w-full border rounded-lg p-5">
       <Image
         className="object-contain"
         src="/images/grupo.png"

@@ -3,7 +3,7 @@ import Group from './Group'
 
 function GroupCard({ groupNumber }: { groupNumber: number }) {
   return (
-    <div className="flex items-center  max-w-sm w-full overflow-hidden rounded shadow-lg">
+    <div className="flex items-center w-full overflow-hidden rounded shadow-lg">
       <div className="w-2/12 flex items-center">
         <div className="w-full text-right">
           <button className="p-3 rounded-full bg-white">Prev</button>
