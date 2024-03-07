@@ -7,7 +7,7 @@ const Logo = () => {
       width={500}
       height={500}
       alt="Logo da empresa"
-      className="h-auto hover:drop-shadow"
+      className="hover:drop-shadow"
     />
   )
 }
