@@ -2,8 +2,6 @@
 import Lading from '@/features/Landing'
 // import styles from './page.module.css'
 
-// import { Button } from '@mantine/core'
-
 export default async function Main() {
   // redirect('/auth/signin')
 

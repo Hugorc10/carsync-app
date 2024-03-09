@@ -1,0 +1,9 @@
+.formPaper {
+  width: 100%;
+  max-width: rem(450px);
+  /* background-color: red; */
+  border-radius: var(--mantine-radius-sm);
+  padding: var(--mantine-spacing-xl);
+  margin: var(--mantine-spacing-xl) auto;
+  /* border: 1px solid var(--mantine-color-gray-2); */
+}

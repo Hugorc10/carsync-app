@@ -1,3 +1,5 @@
+// 'use client'
+
 import '../styles/globals.css'
 import { ReactNode } from 'react'
 // import { Dosis, Inter } from 'next/font/google'
@@ -8,6 +10,8 @@ import '@mantine/dates/styles.css'
 
 import { ColorSchemeScript, MantineProvider } from '@mantine/core'
 import { Navbar } from '@/components'
+import { UserSessionContextProvider } from '@/context/userSessionContext'
+import { ToastContainer } from 'react-toastify'
 
 // const dosis = Dosis({ subsets: ['latin'], variable: '--font-dosis' })
 // const inter = Inter({ subsets: ['latin-ext'], variable: '--font-inter' })
@@ -33,8 +37,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         {/* <Footer /> */}
         <MantineProvider>
-          <Navbar />
-          {children}
+          <UserSessionContextProvider>
+            <Navbar />
+            {children}
+            <ToastContainer />
+          </UserSessionContextProvider>
         </MantineProvider>
       </body>
     </html>
