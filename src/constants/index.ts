@@ -102,3 +102,5 @@ export const footerLinks = [
     href: '/',
   },
 ]
+
+export const currency = 'R$'

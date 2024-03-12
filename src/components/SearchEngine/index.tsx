@@ -4,16 +4,17 @@ import classes from './SearchEngine.module.css'
 // import SelectCountry from '../SelectCountry'
 // import SelectState from '../SelectState'
 // import SelectCarMake from '../SelectCarMake'
-import SelectSearch from '../SelectSearch'
+import MantineSelect from '../MantineSelect'
+import { manufacturers } from '@/constants'
 
-const carMakes = ['Ford', 'Fiat', 'Toyota']
+// const carMakes = ['Ford', 'Fiat', 'Toyota']
 const vehicleTypes = ['Caminhão', 'Carro', 'Ônibus', 'Van', 'Outro']
 const countries = ['Brasil', 'Argentina', 'Chile', 'Uruguai']
 const states = ['SP', 'RJ', 'MG', 'BA']
 
 const SearchEngine = () => {
   return (
-    <Container className={classes.container} pb="4rem">
+    <Container className={classes.container} mb="md" size="100%">
       <Flex
         direction={{
           base: 'column',
@@ -29,25 +30,25 @@ const SearchEngine = () => {
           sm: 'flex-end',
         }}
       >
-        <SelectSearch
+        <MantineSelect
           label="País"
           placeholder="Brasil"
           data={countries}
           nothingFoundMessage="Nenhum país encontrado"
         />
-        <SelectSearch
+        <MantineSelect
           label="Estado"
           placeholder="BA"
           data={states}
           nothingFoundMessage="Nenhum estado encontrado"
         />
-        <SelectSearch
+        <MantineSelect
           label="Marca do carro"
           placeholder="Ford"
-          data={carMakes}
+          data={manufacturers}
           nothingFoundMessage="Marca não encontrada"
         />
-        <SelectSearch
+        <MantineSelect
           label="Tipo de veículo"
           placeholder="Carro"
           data={vehicleTypes}
