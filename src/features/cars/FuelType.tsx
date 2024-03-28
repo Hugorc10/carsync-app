@@ -1,4 +1,4 @@
-import MantineSelect from '@/components/MantineSelect'
+import MantineSelect from '@/components/SelectMantine'
 import React from 'react'
 
 export const FuelType = () => {

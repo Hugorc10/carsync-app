@@ -1,13 +1,13 @@
 'use client'
 
-import MantineSelect from '@/components/MantineSelect'
+import SelectMantine from '@/components/SelectMantine'
 import React from 'react'
 import { carTypes } from '@/data'
 // import { optionsFilter } from '@/utils/optionsFilter'
 
 export const BodyType = () => {
   return (
-    <MantineSelect
+    <SelectMantine
       label="Tipo do carro"
       placeholder="Sedan"
       data={carTypes}

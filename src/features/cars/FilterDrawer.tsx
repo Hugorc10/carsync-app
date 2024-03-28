@@ -6,7 +6,7 @@ import { PriceRange } from './PriceRange'
 import { ResetFiltersButton } from './ResetFiltersButton'
 import { Transmission } from './Transmission'
 import { YearModel } from './YearModel'
-import MantineSelect from '@/components/MantineSelect'
+import SelectMantine from '@/components/SelectMantine'
 import { carTypes } from '@/data'
 
 export const FiltersDrawer = () => {
@@ -32,7 +32,7 @@ export const FiltersDrawer = () => {
           <ResetFiltersButton />
         </Flex>
 
-        <MantineSelect
+        <SelectMantine
           label="Classificação do carro"
           placeholder="Sedan"
           data={carTypes}
@@ -46,7 +46,7 @@ export const FiltersDrawer = () => {
         <YearModel />
         <Transmission />
         <Space my="lg" />
-        <MantineSelect
+        <SelectMantine
           label="Tipo de combustível"
           placeholder="Gasolina"
           data={[

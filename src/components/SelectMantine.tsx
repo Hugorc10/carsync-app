@@ -1,5 +1,6 @@
 'use client'
 
+// import { useCountries } from '@/hooks/useCountries'
 import { optionsFilter } from '@/utils/optionsFilter'
 import { Select, SelectProps } from '@mantine/core'
 import { ReactNode } from 'react'
@@ -11,7 +12,7 @@ interface Props extends SelectProps {
   required?: boolean
 }
 
-const MantineSelect = ({
+const SelectMantine = ({
   label,
   placeholder,
   data,
@@ -31,4 +32,4 @@ const MantineSelect = ({
   )
 }
 
-export default MantineSelect
+export default SelectMantine

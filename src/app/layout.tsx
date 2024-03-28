@@ -12,6 +12,9 @@ import { ColorSchemeScript, MantineProvider } from '@mantine/core'
 import { Navbar } from '@/components'
 import { UserSessionContextProvider } from '@/context/userSessionContext'
 import { ToastContainer } from 'react-toastify'
+import { ReactQueryProvider } from './queryProvider'
+import { StoreProvider } from './StoreProvider'
+import { AppContextProvider } from '@/context/AppContext'
 
 // const dosis = Dosis({ subsets: ['latin'], variable: '--font-dosis' })
 // const inter = Inter({ subsets: ['latin-ext'], variable: '--font-inter' })
@@ -36,13 +39,19 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <main className="app">{children}</main> */}
 
         {/* <Footer /> */}
-        <MantineProvider>
-          <UserSessionContextProvider>
-            <Navbar />
-            {children}
-            <ToastContainer />
-          </UserSessionContextProvider>
-        </MantineProvider>
+        <StoreProvider>
+          <ReactQueryProvider>
+            <MantineProvider>
+              <AppContextProvider>
+                <UserSessionContextProvider>
+                  <Navbar />
+                  {children}
+                  <ToastContainer />
+                </UserSessionContextProvider>
+              </AppContextProvider>
+            </MantineProvider>
+          </ReactQueryProvider>
+        </StoreProvider>
       </body>
     </html>
   )
