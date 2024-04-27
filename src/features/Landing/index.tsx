@@ -1,9 +1,10 @@
 'use client'
 
-import { Container } from '@mantine/core'
+import { Container, Divider } from '@mantine/core'
 import Hero from './Hero'
 // import Map from '@/components/Map'
 import dynamic from 'next/dynamic'
+import { Groups } from '../Groups'
 
 const Lading = () => {
   const Map = dynamic(() => import('@/components/Map'), {
@@ -13,8 +14,10 @@ const Lading = () => {
     <>
       <Hero />
       <Container mt="-3rem" px="1rem" mb="2rem">
-        <Map />
+        {/* <Map /> */}
       </Container>
+      {/* <Divider mb="xl" /> */}
+      <Groups />
     </>
   )
 }

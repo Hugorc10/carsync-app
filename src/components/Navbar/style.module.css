@@ -1,11 +1,12 @@
 .header {
-  height: rem(60px);
+  /* height: rem(60px); */
   padding-left: var(--mantine-spacing-md);
   padding-right: var(--mantine-spacing-md);
-  position: sticky;
+  /* position: sticky; */
   /* display: flex; */
+  /* border: 1px solid light-dark(#fbfbfb, var(--mantine-color-dark-8)); */
   flex-wrap: nowrap;
-  top: -2px;
+  /* top: -2px; */
   z-index: 10;
   background-color: light-dark(#fbfbfb, var(--mantine-color-dark-8));
 }

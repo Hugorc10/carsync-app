@@ -13,6 +13,13 @@ export const CardModal = ({ opened, onClose, title }: CardModalProps) => {
       <Text size="md" c="black" fw="bold">
         PIDs
       </Text>
+      <Text>
+        <b>Nome:</b> Teste
+      </Text>
+      <Text>Ola</Text>
+      <Text>
+        <b>Nome:</b> Teste
+      </Text>
       Teste
     </Modal>
   )
