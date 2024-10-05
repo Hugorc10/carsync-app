@@ -1,4 +1,4 @@
-import { CarsLayout } from '@/features/cars'
+import { CarsLayout } from '@/features/Cars'
 
 const CarListingPage = () => {
   return (

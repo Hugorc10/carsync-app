@@ -7,11 +7,38 @@ import { AuthButtons } from './AuthButtons'
 import { ThemeSwitcher } from './ThemeSwitcher'
 import NavigationMobile from './NavigationMobile'
 
+const linkMockdata = [
+  {
+    link: '/home',
+    label: 'Home',
+  },
+  {
+    link: '/company',
+    label: 'Empresa',
+  },
+  {
+    link: '/cars',
+    label: 'Carros',
+  },
+  {
+    link: '/features',
+    label: 'Features',
+  },
+  {
+    link: '/team',
+    label: 'Time',
+  },
+  {
+    link: 'Contact',
+    label: 'Contato',
+  },
+]
+
 const Navbar = () => {
   return (
     <AppShell header={{ height: 60 }} padding="md" mb="xl">
       <AppShell.Header className={classes.header}>
-        <Box>
+        <Box className="py-2">
           <Group
             h="100%"
             justify="space-between"
@@ -37,38 +64,22 @@ const Navbar = () => {
                   </Button>
                 </li>
                 <li>
-                  <Button
-                    component="a"
-                    href="/cars"
-                    className=" py-2 pr-4 pl-3  border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                  >
+                  <Button component="a" href="/cars">
                     Cars
                   </Button>
                 </li>
                 <li>
-                  <Button
-                    component="a"
-                    href="/"
-                    className=" py-2 pr-4 pl-3  border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                  >
+                  <Button component="a" href="/">
                     Features
                   </Button>
                 </li>
                 <li>
-                  <Button
-                    component="a"
-                    href="/"
-                    className="py-2 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                  >
+                  <Button component="a" href="/">
                     Team
                   </Button>
                 </li>
                 <li>
-                  <Button
-                    component="a"
-                    href="/"
-                    className="py-2 pr-4 pl-3  border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                  >
+                  <Button component="a" href="/">
                     Contact
                   </Button>
                 </li>

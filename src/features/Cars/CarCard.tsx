@@ -12,7 +12,7 @@ import {
 import { IconManualGearbox, IconUsers } from '@tabler/icons-react'
 import { BsFuelPump } from 'react-icons/bs'
 import { useDisclosure } from '@mantine/hooks'
-import { CardModal } from './CardModal'
+import { CardModal } from './cars-modal/CardModal'
 
 export const CarCard = () => {
   const [opened, { open, close }] = useDisclosure(false)
